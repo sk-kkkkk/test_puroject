@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>サイト情報</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#">HOME</a></li>
+            <li class="nav-item"><a href="https://www.google.com">Google</a></li>
+            <li class="nav-item"><a href="https://www.amazon.com">Amazon</a></li>
+            <script>
+                document.write('<li class="nav-item"><a href="https://www.facebook.com">Facebook</a></li>')
+            </script>
+        </ul>
+    </nav>
+    <div class="card-container">
+        <div class="card">
+            <h3 class="site-name">Google</h3>
+            <h4>月額:1000円</h4>
+            <p class="account-info">ユーザー名: example@gmail.com</p>
+            <p class="account-info">パスワード: gglasojuku</p>
+        </div>
+        <div class="card">
+            <h3 class="site-name">Amazon</h3>
+            <h4>月額:500円</h4>
+            <p class="account-info">ユーザー名: amazon_user</p>
+            <p class="account-info">パスワード: amznasojuku</p>
+        </div>
+        <div class="card">
+            <h3 class="site-name">Facebook</h3>
+            <h4>月額:500円</h4>
+            <p class="account-info">ユーザー名: fb_user123</p>
+            <p class="account-info">パスワード: fbasojuku</p>
+        </div>
+        <div class="pricecard">
+            <h3 class="pricecard-title">全サービス月額合計</h3>
+            <script>
+            document.write('<p class="pricecard-price">月額：'+(1000+500+500)+'円(税込み：'+((1000+500+500)*1.1)+'円)</p>)    
+            </script>
+        </div>
+
+
+</body>
+</html>
